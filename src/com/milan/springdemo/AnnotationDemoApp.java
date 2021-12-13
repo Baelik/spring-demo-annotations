@@ -1,5 +1,8 @@
 package com.milan.springdemo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AnnotationDemoApp {
@@ -15,6 +18,9 @@ public class AnnotationDemoApp {
 		
 		// call a method on the bean
 		System.out.println(theCoach.getDailyWorkout());
+		
+		// call method to get daily fortune
+		System.out.println(theCoach.getDailyFortune());
 		
 		// close context
 		context.close();
